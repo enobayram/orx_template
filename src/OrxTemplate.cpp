@@ -7,6 +7,9 @@ class Soldier: public ScrollObject {
 public:
     Soldier(): direction(RIGHT) {}
 
+    void OnCreate() {}
+    void OnDelete() {}
+
     void Update(const orxCLOCK_INFO &_rstInfo) {
         if(orxInput_IsActive("Click")) {
             orxVECTOR mouseInView;
